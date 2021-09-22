@@ -7,6 +7,110 @@ body {
   --lightGrey: hsl(204, 43%, 93%);
   --blueGrey: hsl(218, 22%, 67%);
   --white: hsl(69, 69%, 100%);
-
+  background-color: red;
   font-family: "Karla", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 75%;
+}
+
+p {
+  vertical-align: middle;
+  vertical-align: center;
+}
+
+h2 {
+  vertical-align: middle;
+  margin: 0px;
+}
+
+h1 {
+  display: inline;
+}
+
+.head {
+  background-color: var(--white);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.head h3 {
+  color: var(--yellow);
+}
+
+.left-half {
+  display: flex;
+  flex-direction: column;
+
+
+  justify-content: space-between;
+  background-color: var(--cyan);
+  color: white;
+  border-bottom-left-radius: 10px;
+}
+
+.right-half {
+  padding-top: 20px;
+
+  background-color: var(--cyan-lighter);
+  color: white;
+  border-bottom-right-radius: 10px;
+}
+
+.t29 {
+  font-size: 200%;
+  font-weight: bolder;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.mgrn {
+   margin: 10px;
+}
+
+.two {
+  margin-bottom: 10px;
+}
+
+.button {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly; */
+}
+
+.signup {
+  background-color: var(--yellow);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.signup:hover {
+  opacity: 80%;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+.textcontainerleft {
+  justify-content: flex-start;
+}
+
+section {
+  padding: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .bottom{
+    flex-direction: row;
+  }
 }
