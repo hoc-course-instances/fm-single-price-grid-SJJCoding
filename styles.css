@@ -7,7 +7,7 @@ body {
   --lightGrey: hsl(204, 43%, 93%);
   --blueGrey: hsl(218, 22%, 67%);
   --white: hsl(69, 69%, 100%);
-  background-color: red;
+  background-color: var(--lightGrey);
   font-family: "Karla", sans-serif;
 }
 
@@ -48,15 +48,16 @@ h1 {
   justify-content: space-between;
   background-color: var(--cyan);
   color: white;
-  border-bottom-left-radius: 10px;
+ 
 }
 
 .right-half {
   padding-top: 20px;
-
+  
   background-color: var(--cyan-lighter);
   color: white;
   border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .t29 {
@@ -70,7 +71,7 @@ h1 {
    margin: 10px;
 }
 
-.two {
+.textcontainerright {
   margin-bottom: 10px;
 }
 
@@ -109,8 +110,26 @@ section {
   padding: 40px;
 }
 
-@media only screen and (max-width: 600px) {
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
   .bottom{
     flex-direction: row;
   }
+
+  .left-half {
+    width: 100%;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .right-half {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+  }
+
 }
